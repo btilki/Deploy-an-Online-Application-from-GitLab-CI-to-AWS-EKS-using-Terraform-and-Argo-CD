@@ -79,15 +79,21 @@ cd Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Ar
 2. **Configure Variables:**
    - Edit `variables.tf` with your AWS settings and parameters.
 
-3. **Initialize Terraform:** ```bassh terraform init ```
+3. **Initialize Terraform:**
+   ```bash
+   terraform init
+   ```
 
-4. **Plan & Apply Infrastructure:** ```bash terraform plan terraform apply ```
+5. **Plan & Apply Infrastructure:**
+   ```bash
+   terraform plan terraform apply
+   ```
 
-5. **Configure Argo CD:**
+7. **Configure Argo CD:**
    - Deploy Argo CD to EKS using Helm or manifests.
    - Connect Argo CD to your application's Git repository.
 
-6. **Set Up GitLab CI:**
+8. **Set Up GitLab CI:**
    - Add a `.gitlab-ci.yml` to trigger both Terraform and Argo CD workflows.
 
 ## Usage
