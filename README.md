@@ -25,8 +25,8 @@ Language)](https://github.com/hashicorp/hcl). A typical structure includes:
 This repository is structured with modular, purpose-focused Terraform files:
 
 ### [`main-eks.tf`]
-    (https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD/blob/main-eks.tf)
-    Defines the core AWS infrastructure:
+    (https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD/blob/main-eks.tf)  
+  Defines the core AWS infrastructure:
 - AWS provider configuration.
 - VPC creation with public/private subnets and tagging for Kubernetes.
 - EKS Cluster setup: Node group management, cluster version, public endpoint,
@@ -36,14 +36,14 @@ This repository is structured with modular, purpose-focused Terraform files:
 
 ### [`kube-resources.tf`]
     (https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD/blob/main/kube-resources.tf)
-    Manages Kubernetes resources using Terraform:
+  Manages Kubernetes resources using Terraform:
 - Creates application-specific namespaces (e.g., `online-boutique`).
 - Sets up cluster roles and namespace viewer roles for RBAC.
 - Manages bindings between roles, namespaces, and users for secure access.
 
 ### [`iam-roles.tf`]
     (https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD/blob/main/iam-roles.tf)
-    Defines IAM roles and policies for AWS and Kubernetes access management:
+  Defines IAM roles and policies for AWS and Kubernetes access management:
 - Configures administrator/developer roles with role assumption policies.
 - Maps AWS IAM roles to Kubernetes service accounts and users
   (RBAC integration).
@@ -52,7 +52,7 @@ This repository is structured with modular, purpose-focused Terraform files:
 
 ### [`argocd.tf`]
     (https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD/blob/main/argocd.tf)
-    Installs and configures Argo CD for GitOps-driven deployments:
+  Installs and configures Argo CD for GitOps-driven deployments:
 - Provisions the Argo CD Helm release into EKS.
 - Sets up GitOps repository secrets for secure access.
 - Manages the Argo CD application for automatic sync/deployment from GitLab to
@@ -68,10 +68,10 @@ This repository is structured with modular, purpose-focused Terraform files:
 
 ## Getting Started
 
-1. **Clone the Repository:** ```sh git clone
-https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD.git
-cd
-Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD
+1. **Clone the Repository:**
+```bash
+git clone https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD.git
+cd Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD
 ```
 
 2. **Configure Variables:**
