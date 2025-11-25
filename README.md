@@ -40,15 +40,15 @@ GitOps-based application delivery.
 
 ## Usage
 
-1. **Clone this repo** ```bash git clone https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD.git cd
-Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD ```
+1. **Clone this repo** ```bash git clone https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD.git```
+```bash cd Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD```
 
 2. **Configure Terraform variables**
    - Edit `terraform.tfvars` or relevant configuration files to match your AWS
      setup.
 
 3. **Run Terraform (manually or automate via CI)** ```bash terraform init
-terraform plan terraform apply ```
+terraform plan terraform apply```
 
 4. **Set up GitLab CI pipeline**
    - See `.gitlab-ci.yml` for pipeline configuration.
