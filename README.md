@@ -40,21 +40,26 @@ GitOps-based application delivery.
 
 ## Usage
 
-1. **Clone this repo** ```bash git clone https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD.git```
+1. **Clone this repo**
+<pre> ```bash git clone https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD.git cd Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD ``` </pre>
+
+<pre> ```bash terraform init terraform plan terraform apply ``` </pre>
+  
+3. ```bash git clone https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD.git```
 ```bash cd Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD```
 
-2. **Configure Terraform variables**
+4. **Configure Terraform variables**
    - Edit `terraform.tfvars` or relevant configuration files to match your AWS
      setup.
 
-3. **Run Terraform (manually or automate via CI)** ```bash terraform init
+5. **Run Terraform (manually or automate via CI)** ```bash terraform init
 terraform plan terraform apply```
 
-4. **Set up GitLab CI pipeline**
+6. **Set up GitLab CI pipeline**
    - See `.gitlab-ci.yml` for pipeline configuration.
    - Configure CI/CD variables (AWS credentials, etc.) in GitLab.
 
-5. **Deploy your application**
+7. **Deploy your application**
    - Push Kubernetes manifests or Helm charts to the Git repository monitored
      by Argo CD.
    - Argo CD will automatically sync and deploy to your EKS cluster.
@@ -97,3 +102,4 @@ terraform plan terraform apply```
 ## License
 
 MIT
+
