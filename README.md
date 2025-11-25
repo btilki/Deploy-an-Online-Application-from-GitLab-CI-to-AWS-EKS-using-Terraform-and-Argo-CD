@@ -41,9 +41,9 @@ GitOps-based application delivery.
 ## Usage
 
 1. **Clone this repo**
-<pre> ```bash git clone https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD.git cd Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD ``` </pre>
+```bash git clone https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD.git cd Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD ```
 
-<pre> ```bash terraform init terraform plan terraform apply ``` </pre>
+```bash terraform init terraform plan terraform apply ```
   
 3. ```bash git clone https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD.git```
 ```bash cd Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD```
@@ -102,4 +102,5 @@ terraform plan terraform apply```
 ## License
 
 MIT
+
 
