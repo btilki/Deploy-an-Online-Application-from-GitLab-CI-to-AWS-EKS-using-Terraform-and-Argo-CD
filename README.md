@@ -71,15 +71,17 @@ This repository is structured with modular, purpose-focused Terraform files:
 1. **Clone the Repository:**
 ```bash
 git clone https://github.com/btilki/Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD.git
+```
+```bash
 cd Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Argo-CD
 ```
 
 2. **Configure Variables:**
    - Edit `variables.tf` with your AWS settings and parameters.
 
-3. **Initialize Terraform:** ```sh terraform init ```
+3. **Initialize Terraform:** ```bassh terraform init ```
 
-4. **Plan & Apply Infrastructure:** ```sh terraform plan terraform apply ```
+4. **Plan & Apply Infrastructure:** ```bash terraform plan terraform apply ```
 
 5. **Configure Argo CD:**
    - Deploy Argo CD to EKS using Helm or manifests.
