@@ -86,7 +86,10 @@ cd Deploy-an-Online-Application-from-GitLab-CI-to-AWS-EKS-using-Terraform-and-Ar
 
 5. **Plan & Apply Infrastructure:**
    ```bash
-   terraform plan terraform apply
+   terraform plan
+   ```
+      ```bash
+   terraform apply
    ```
 
 7. **Configure Argo CD:**
